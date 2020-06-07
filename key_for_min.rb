@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
   name_hash.collect do |name,value|
     if value <= 1
       return name
-    elsif value <=10
+    elsif name < value
       return name
     end
   end
